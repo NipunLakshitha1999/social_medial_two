@@ -24,12 +24,16 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="80" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="56" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="1" attributes="0">
-                  <Component id="btnContentAdd" min="-2" max="-2" attributes="0"/>
-                  <Component id="txtContent" min="-2" pref="198" max="-2" attributes="0"/>
+                  <Component id="txtContent" alignment="1" min="-2" pref="198" max="-2" attributes="0"/>
+                  <Group type="102" alignment="1" attributes="0">
+                      <Component id="btnSubcribe" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
+                      <Component id="btnContentAdd" min="-2" max="-2" attributes="0"/>
+                  </Group>
               </Group>
-              <EmptySpace pref="122" max="32767" attributes="0"/>
+              <EmptySpace pref="146" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -39,7 +43,10 @@
               <EmptySpace min="-2" pref="69" max="-2" attributes="0"/>
               <Component id="txtContent" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Component id="btnContentAdd" min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="btnContentAdd" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnSubcribe" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
               <EmptySpace pref="169" max="32767" attributes="0"/>
           </Group>
       </Group>
@@ -61,6 +68,14 @@
       <Events>
         <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnContentAddMouseClicked"/>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnContentAddActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JToggleButton" name="btnSubcribe">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Subscribe"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSubcribeActionPerformed"/>
       </Events>
     </Component>
   </SubComponents>

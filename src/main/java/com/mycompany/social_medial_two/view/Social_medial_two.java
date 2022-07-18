@@ -12,6 +12,6 @@ package com.mycompany.social_medial_two.view;
 public class Social_medial_two {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        new Channel().setVisible(true);
     }
 }
