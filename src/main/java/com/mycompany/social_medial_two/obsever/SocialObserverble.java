@@ -33,10 +33,11 @@ public class SocialObserverble {
        return 0;
     }
 
-    public void notifySubscriber(){
+    public double notifySubscriber(){
        for(SocailObserver sb : observerArrayList){
            sb.shareContent(this.content);
        }
+       return 0;
     }
 
     public double sendContent(String content){

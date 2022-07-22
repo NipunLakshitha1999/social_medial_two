@@ -31,6 +31,12 @@ public class SocialObserverbal {
         assertEquals(0,socialObserverble.sendContent("test"),0);
     }
 
+    @Test
+    public void notifySubscriber(){
+        SocialObserverble socialObserverble = new SocialObserverble();
+        assertEquals(0,socialObserverble.notifySubscriber(),0);
+    }
+
 
 
 }
