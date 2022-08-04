@@ -7,9 +7,8 @@ package com.mycompany.social_media_two.Observerbale;
 
 import com.mycompany.social_medial_two.obsever.SocialObserverble;
 import com.mycompany.social_medial_two.view.ShowContent;
-import org.junit.Test;
-
-import static org.junit.Assert.assertEquals;
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class SocialObserverbal {
 
