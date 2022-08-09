@@ -64,9 +64,6 @@ public class ShowContent extends javax.swing.JFrame implements SocailObserver {
 
     }
 
-
-
-
     private javax.swing.JTextField txtShowContent;
 
     @Override

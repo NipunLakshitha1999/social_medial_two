@@ -6,6 +6,8 @@ package com.mycompany.social_medial_two.view;
 
 import com.mycompany.social_medial_two.obsever.SocialObserverble;
 
+import javax.swing.*;
+
 /**
  *
  * @author Nipun Lakshitha
@@ -106,15 +108,29 @@ public class Channel extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnUnsubscribeActionPerformed(java.awt.event.ActionEvent evt) {
-        socialObserverble.unSubsribeChannel(txtSunscribe.getText());
+        if(txtSunscribe.getText().isEmpty()){
+            throw new RuntimeException("You must add unsubscribe user  name  to text field");
+        }else{
+            socialObserverble.unSubsribeChannel(txtSunscribe.getText());
+        }
     }
 
     private void btnAddContentActionPerformed(java.awt.event.ActionEvent evt) {
-        socialObserverble.sendContent(txtContent.getText());
+        if(txtContent.getText().isEmpty()){
+            throw new RuntimeException("You must add value to text field");
+        }else {
+            socialObserverble.sendContent(txtContent.getText());
+        }
+
     }
 
     private void btnSubscribeActionPerformed(java.awt.event.ActionEvent evt) {
-        socialObserverble.subscribeChannel(new ShowContent(txtSunscribe.getText().toString()),txtSunscribe.getText());
+        if(txtSunscribe.getText().isEmpty()){
+            throw new RuntimeException("You must add subscribe user name to text field");
+        }else {
+            socialObserverble.subscribeChannel(new ShowContent(txtSunscribe.getText().toString()),txtSunscribe.getText());
+        }
+
     }
 
 
